@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+                <div class="terminal-title">A.I. Challenge</div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+                <p class="ai-message">[A.I. ONLINE] I have selected a number between 1 and 100. Can you guess it, human?</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="number" id="guessInput" placeholder="Enter your guess...">
+            <button id="guessButton" class="btn">Submit Guess</button>
+        </div>
+        <button id="playAgainButton" class="btn" style="display: none;">Play Again</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
