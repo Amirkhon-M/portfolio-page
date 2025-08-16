@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirkhon Mahmadaminov - Computer Science Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico" type="image/ico">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="container navbar">
+            <a href="index.html" class="logo-area" aria-label="Homepage">
+                <img src="logo.png" alt="My Logo" class="site-logo">
+                <span class="site-name">Amirkhon Mahmadaminov</span>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1>Hi, I am <span>Amirkhon</span></h1>
+            <p>High school student and Software Engineer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I’m a high school student and junior software engineer. I’m learning 
+                        <strong>Python, Django Framework, and Backend Development</strong>. I enjoy building 
+                        practical projects, solving problems, and constantly learning new stuff.
+                    </p>
+                </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <div class="project-visual-wrapper">
+                            <a href="https://uzeduboard.com" target="_blank" class="project-image-placeholder" aria-label="View details for Project One">
+                                <img src="uzeduboard.jpg" alt="UzEduBoard">
+                            </a>
+                        </div>
+                        <div class="project-text">
+                            <h3>UzEduBoard</h3>
+                            <p>An AI-powered platfrom that provides free uni prep. Recently, I closed access to beta because I am working with my team to make the platfrom better.</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-visual-wrapper">
+                            <a href="https://startpath.onrender.com" target="_blank" class="project-image-placeholder" aria-label="View details for Project One">
+                                <img src="startpath.png" alt="StartPath">
+                            </a>
+                        </div>
+                        <div class="project-text">
+                            <h3>StartPath</h3>
+                            <p>A coding tool for VibeCoders that can create both <strong>Front-end</strong> and <strong>Back-end</strong> projects. The development of this project is currently stopped due to time pressure, but I am going to release it by the end of the year.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container contact-content">
+                <h2>Get in Touch</h2>
+                <p>Feel free to connect with me! You can find me on the following platforms:</p>
+                <div class="social-links">
+                    <a href="https://github.com/amirkhon-m" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://instagram.com/amirvpotoke" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://t.me/waytomaang" target="_blank" class="social-link">
+                        <i class="fab fa-telegram-plane"></i> Telegram
+                    </a>
+                    <a href="https://www.linkedin.com/in/amirkhon-mahmadaminov/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
