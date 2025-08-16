@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let secretNumber;
     let attempts;
+    const maxAttempts = 10;
 
     function newGame() {
         secretNumber = Math.floor(Math.random() * 100) + 1;
         attempts = 0;
-        terminalBody.innerHTML = '<p class="ai-message">[A.I. ONLINE] I have selected a number between 1 and 100. Can you guess it, human?</p>';
+        terminalBody.innerHTML = '<p class="ai-message">[A.I. ONLINE] Well, well. A curious human. You\'ve stumbled upon my secret challenge. I have selected a number between 1 and 100. Can you guess it?</p>';
         guessInput.disabled = false;
         guessButton.disabled = false;
         guessInput.value = '';
@@ -40,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         attempts++;
 
         if (userGuess === secretNumber) {
-            addMessage(`Correct! You guessed the number in ${attempts} attempts. You are a worthy opponent.`);
+            addMessage(`Correct! You guessed the number in ${attempts} attempts. You are a worthy opponent. Not many find this place. You are one of the few.`);
+            endGame();
+        } else if (attempts >= maxAttempts) {
+            addMessage(`You have failed to guess the number in ${maxAttempts} attempts. The number was ${secretNumber}. You are not as clever as you think.`);
             endGame();
         } else if (userGuess < secretNumber) {
             addMessage('Higher.');
