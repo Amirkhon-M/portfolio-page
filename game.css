@@ -1,0 +1,146 @@
+:root {
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color: #00f2ff;
+    --border-color: rgba(0, 242, 255, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: var(--accent-color);
+}
+
+.game-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.terminal {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+.terminal-header {
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-button.red { background-color: #ff5f56; }
+.terminal-button.yellow { background-color: #ffbd2e; }
+.terminal-button.green { background-color: #27c93f; }
+
+.terminal-title {
+    color: #a0a0a0;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.terminal-body {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.ai-message {
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.input-area {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#guessInput {
+    flex-grow: 1;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 12px;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+#guessInput:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+}
+
+#playAgainButton {
+    width: 100%;
+    margin-top: 15px;
+}
