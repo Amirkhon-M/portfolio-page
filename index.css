@@ -225,6 +225,10 @@ section h2 {
     overflow: hidden;
 }
 
+.rocket-link {
+    text-decoration: none;
+}
+
 .rocket-container {
     width: 200px;
     height: 300px;
