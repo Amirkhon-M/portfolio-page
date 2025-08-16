@@ -1,26 +1,12 @@
-# 🌐 Amirkhon Mahmadaminov - Portfolio
+# 🌐 Portfolio Page
 
-This is my personal portfolio website where I showcase my projects, skills, and ways to connect with me.  
-The site is built with **HTML, CSS, and JavaScript**.
+Welcome to my personal **portfolio website**!  
+This is a simple static website built with **HTML, CSS, and JavaScript**.  
+I created it to showcase my projects, but you’re welcome to **use this template for your own portfolio**.  
 
-## 🚀 About Me
-Hi! I’m **Amirkhon Mahmadaminov**, a high school student and junior software engineer.  
-I’m passionate about **Python, Django, backend development, and building practical projects** that solve real problems.
+👉 I got inspired by the clean and minimal style of **Google’s NotebookLM landing page**.  
 
-## 🛠️ Tech Stack
-- HTML5, CSS3, JavaScript  
-- Python (Django, Flask)  
-- Git & GitHub  
-
-## 📂 Projects Highlighted
-- **[UzEduBoard](https://uzeduboard.com)** – An AI-powered platform for free university preparation.  
-- **[StartPath](https://startpath.onrender.com)** – A coding tool that generates both frontend and backend projects.  
-
-## 📬 Contact
-- GitHub: [@amirkhon-m](https://github.com/amirkhon-m)  
-- Telegram: [@waytomaang](https://t.me/waytomaang)  
-- LinkedIn: [Amirkhon Mahmadaminov](https://www.linkedin.com/in/amirkhon-mahmadaminov/)  
-- Instagram: [@amirvpotoke](https://instagram.com/amirvpotoke)  
-
-## 📄 License
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+## ✨ Features
+- Responsive layout (works on desktop and mobile)
+- Sections for About, Projects, and Contact
+- Easy to customize for your own needs
